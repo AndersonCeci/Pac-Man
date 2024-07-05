@@ -1,0 +1,233 @@
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: black;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 440px;
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+.wall {
+  background-color: #1919a6;
+  box-sizing: border-box;
+  border: 1px solid #1919a6;
+  box-shadow: 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+.food {
+  background-color: transparent;
+  box-sizing: border-box;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.food::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pink-ghost {
+  background-image: url("images/ghost.png");
+  background-size: cover;
+}
+.blue-ghost {
+  background-image: url("images/blue-ghost.png");
+  background-size: cover;
+}
+.ghost-scared-blue {
+  background-image: url("images/scared-ghost.png");
+  background-size: cover;
+}
+
+.ghost-scared-pink {
+  background-image: url("images/scared-ghost.png");
+  background-size: cover;
+}
+
+.power-up {
+  background-image: url("images/cherry.png");
+  background-size: cover;
+}
+
+.pac-man {
+  background-image: url("images/pacman.png");
+  background-size: cover;
+}
+
+.pac-man-up {
+  background-image: url("images/pacman.png");
+  background-size: cover;
+  transform: rotate(-90deg);
+}
+
+.pac-man-down {
+  background-image: url("images/pacman.png");
+  background-size: cover;
+  transform: rotate(90deg);
+}
+.pac-man-left {
+  background-image: url("images/pacman.png");
+  background-size: cover;
+  transform: rotate(180deg);
+}
+
+.score {
+  color: yellow;
+  margin-left: 5px;
+}
+
+.score-h1 {
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  /* font-size: 14px; */
+}
+
+.score-div {
+  display: flex;
+  font-family: "Press Start 2P", cursive;
+  /* font-size: 7px; */
+}
+
+.restart-div {
+  display: flex;
+  justify-content: end;
+  color: white;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  /* font-size: 7px; */
+}
+
+.content-div {
+  display: flex;
+  justify-content: space-around;
+  font-size: 7px;
+  margin-top: 20px;
+}
+
+.restart-game-icon {
+  margin-left: 5px;
+}
+
+.rounded-wall-top-right {
+  border-top-right-radius: 25px;
+  background-color: #1919a6;
+  box-sizing: border-box;
+  border: 1px solid #1919a6;
+}
+
+.rounded-wall-top-left {
+  border-top-left-radius: 25px;
+  background-color: #1919a6;
+  box-sizing: border-box;
+  border: 1px solid #1919a6;
+}
+
+.rounded-wall-bottom-right {
+  border-bottom-right-radius: 25px;
+  background-color: #1919a6;
+  box-sizing: border-box;
+  border: 1px solid #1919a6;
+}
+
+.rounded-wall-bottom-left {
+  border-bottom-left-radius: 25px;
+  background-color: #1919a6;
+  box-sizing: border-box;
+  border: 1px solid #1919a6;
+}
+
+.win-score {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.win-message {
+  color: white;
+  font-family: "Press Start 2P", cursive;
+}
+
+.score-span {
+  color: yellow;
+  font-family: "Press Start 2P", cursive;
+  margin-top: 7px;
+}
+
+.win-message-main {
+  text-transform: uppercase;
+}
+
+.win-score-click {
+  display: inline;
+  margin-top: 13px;
+}
+
+.game-over-message-main {
+  text-transform: uppercase;
+  color: white;
+}
+
+.game-over-message {
+  color: white;
+  font-family: "Press Start 2P", cursive;
+}
+
+.game-over-score-span {
+  color: yellow;
+  font-family: "Press Start 2P", cursive;
+  margin-top: 7px;
+}
+
+.game-over-score {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: yellow;
+  font-family: "Press Start 2P", cursive;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.game-over-click {
+  display: inline;
+  margin-top: 13px;
+}
+
+.lives-div {
+  color: white;
+  justify-content: end;
+  font-family: "Press Start 2P", cursive;
+  font-size: 7px;
+}
+
+.heart {
+  background-size: cover;
+  margin-left: 5px;
+  width: 33px;
+  height: auto;
+}

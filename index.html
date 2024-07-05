@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="images/pacman.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pac-Man Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="lives-div" style="display: flex">
+    <h1 class="lives-h1">Health:</h1>
+    <div id="hearts-container">
+      <img src="images/heart.png" class="heart" alt="" srcset="" />
+      <img src="images/heart.png" class="heart" alt="" srcset="" />
+      <img src="images/heart.png" class="heart" alt="" srcset="" />
+    </div>
+  </div>
+  <div class="win-message-main">
+    <div class="win-message" style="display: none">You Win!</div>
+    <div class="win-score" style="display: none">Your score <span class="score-span"></span>
+      <div class="win-score-click">Click <span>Restart</span> To Play Again</div>
+    </div>
+  </div>
+  <div class="game-over-message-main">
+    <div class="game-over-message" style="display: none">Game Over</div>
+    <div class="game-over-score" style="display: none">Your score <span class="game-over-score-span"></span>
+    </div>
+  </div>
+  <div class="grid"></div>
+  <div class="content-div">
+    <div class="score-div">
+      <h1 class="score-h1">Score:</h1>
+      <h1 class="score">0</h1>
+    </div>
+    <div class="restart-div">
+      <h1 class="restart-game-h1">Restart Game</h1>
+      <h1 class="restart-game-icon">&#8634;</h1>
+    </div>
+  </div>
+
+  <script type="module" src="./script/ghost.js"></script>
+  <script type="module" src="./script/lives.js"></script>
+  <script type="module" src="./script/pacman.js"></script>
+  <script type="module" src="./script/utilities.js"></script>
+  <script type="module" src="./script/script.js"></script>
+</body>
+</html>
